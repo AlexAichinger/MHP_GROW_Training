@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <h1><img src="24412663.png" width="45"/>MHP Developer Bootcamp</h1>
+    <h2>Task Section</h2>
+    <h3> Task 1 - Getting started </h3>
+    <p class="lead">Fork this codesandbox, so that you have your own one to work in. As a first step, please implement the methods <code>orderByAlphabet</code> and <code>filterAllToxicFruits</code>. You can use whatever sorting algorithm you want. After you completed your implementation the corresponding unit tests in <kbd>fruits.spec.ts</kbd> should be passing.</p>
+
+    <h3> Task 2 - TDD </h3>
+    <p class="lead">
+      Please implement the Unit Test <code>"Testing that fruits are grouped correctly"</code>. You can use the following snippet as an starting point<pre><code>test("3 is 3", () => {
+        expect(3).toBe(3);
+      });</code></pre>
+
+      After your Unit Test implementation is done, please implement the actual grouping logic and make sure that the Unit Test passes at the end.
+    </p>
+
+    <h3> Task 3 - Fruit Salad Generator </h3>
+    <p class="lead">
+      Implement a fruit salad generator that fullfills the following criteria:
+      <ul>
+        <li>Minimum three different tastes included</li>
+        <li>No toxic ingredients</li>
+        <li>Minimum five different fruits</li>
+        <li>No taste more than twice</li>
+      </ul>
+
+      <b>Bonus:</b> Implement a Unit Test that proves your work.
+    </p>
+
+    <h2>Work Section </h2>
+    <h3>All the fruits go here</h2>
+      <div id="all-fruits" class="container"></div>
+    <h3>All non toxic fruits</h3>
+    <div id="non-toxic-fruits" class="container"></div>
+
+    <h3>All fruits sorted by alphabet</h3>
+    <div id="sorted-fruits-alphabet" class="container"></div>
+
+    <h3>All fruits grouped by taste</h3>
+    <div id="grouped-by-taste" class="container"></div>
+
+    <script src="src/index.ts"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
