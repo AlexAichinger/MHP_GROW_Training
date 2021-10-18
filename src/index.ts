@@ -44,9 +44,18 @@ function getGroupedFruits(): string {
   return result.join("\n");
 }
 
+function getFruitSalad(): string {
+  const result: string[] = [];
+  f.makeFruitSalad(f.getFruits()).forEach((fruit) => {
+    result.push(displayFruit(fruit));
+  });
+  return result.join("\n");
+}
+
 document.getElementById("all-fruits")!.innerHTML = getAllFruits();
 document.getElementById("non-toxic-fruits")!.innerHTML = getNonToxicFruits();
 document.getElementById(
   "sorted-fruits-alphabet"
 )!.innerHTML = getSortedFruits();
 document.getElementById("grouped-by-taste")!.innerHTML = getGroupedFruits();
+document.getElementById("fruit-salad")!.innerHTML = getGroupedFruits();

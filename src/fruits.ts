@@ -95,3 +95,7 @@ export function groupByTaste(input: Fruit[]): Fruit[] {
 export function filterAllToxicFruits(input: Fruit[]): Fruit[] {
   return [{ name: "Unkown", taste: Taste.bitter, isToxic: true }];
 }
+
+export function makeFruitSalad(input: Fruit[]): Fruit[] {
+  return [{ name: "Unkown", taste: Taste.bitter, isToxic: true }];
+}
