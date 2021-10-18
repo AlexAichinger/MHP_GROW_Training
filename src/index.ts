@@ -5,8 +5,7 @@ function displayFruit(f: f.Fruit): string {
   <div class="row">
     <div class="col-4">${f.name} ${f.icon ? f.icon : "&#10067"}</div>
     <div class="col-4">Taste: ${f.taste} </div>
-    <div class="col-4">Is toxic?: ${
-      f.isToxic === true ? "&#128128" : "&#10062"
+    <div class="col-4">Is toxic?: ${f.isToxic === true ? "&#128128" : "&#10062"
     }</div>
   </div>
 `;
@@ -58,4 +57,4 @@ document.getElementById(
   "sorted-fruits-alphabet"
 )!.innerHTML = getSortedFruits();
 document.getElementById("grouped-by-taste")!.innerHTML = getGroupedFruits();
-document.getElementById("fruit-salad")!.innerHTML = getGroupedFruits();
+document.getElementById("fruit-salad")!.innerHTML = getFruitSalad();
